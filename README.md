@@ -32,7 +32,7 @@ You may use pre-arranged Tensorflow Dataset API (1st) or you may download the im
 ### BSD500 (Berkeley Segmentation Dataset 500)
 - Images [[Download](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html#bsds500)]
 
-<br><br>
+<br>
 ## Generate TFRecord Dataset
 
 First, prepare your training dataset.
@@ -54,7 +54,7 @@ This code design is for DIV2K settings.
 - Line 94: You may change the strides and patch sizes.<br>
 - Line 63: You may remove the gradient option or change the threshold.<br>
 
-<br><br>
+<br>
 ## Verify TFRecord Dataset
 
 After creating the TFRecord file, the code below can be used to verify your TFRecord file.
@@ -91,13 +91,13 @@ This code is for Tensorflow version 1.x.
 
 ## Introduction of Our Works
 
-Natural and Realistic Single Image Super-Resolution with Explicit Natural Manifold Discrimination (CVPR, 2019)[Paper](http://openaccess.thecvf.com/content_CVPR_2019/html/Soh_Natural_and_Realistic_Single_Image_Super-Resolution_With_Explicit_Natural_Manifold_CVPR_2019_paper.html) [Repo](https://www.github.com/JWSoh/NatSR)
+Natural and Realistic Single Image Super-Resolution with Explicit Natural Manifold Discrimination (**CVPR, 2019**) [[Paper](http://openaccess.thecvf.com/content_CVPR_2019/html/Soh_Natural_and_Realistic_Single_Image_Super-Resolution_With_Explicit_Natural_Manifold_CVPR_2019_paper.html)] [[Repo](https://www.github.com/JWSoh/NatSR)]
 
-Deep Hierarchical Single Image Super-Resolution by Exploiting Controlled Diverse Context Features (ISM, 2019)[Paper](https://ieeexplore.ieee.org/abstract/document/8959052/) [Repo](https://www.github.com/JWSoh/DHSR)
+Deep Hierarchical Single Image Super-Resolution by Exploiting Controlled Diverse Context Features (**ISM, 2019**) [[Paper](https://ieeexplore.ieee.org/abstract/document/8959052/)] [[Repo](https://www.github.com/JWSoh/DHSR)]
 
-Lightweight Single Image Super-Resolution With Multi-Scale Spatial Attention Networks (IEEE ACCESS, 2020)] [Paper](https://ieeexplore.ieee.org/abstract/document/9001090) [Repo](https://www.github.com/JWSoh/MSAN)
+Lightweight Single Image Super-Resolution With Multi-Scale Spatial Attention Networks (**IEEE ACCESS, 2020**) [[Paper](https://ieeexplore.ieee.org/abstract/document/9001090)] [[Repo](https://www.github.com/JWSoh/MSAN)]
 
-Meta-Transfer Learning for Zero-Shot Super-Resolution (CVPR, 2020) [Arxiv](https://arxiv.org/abs/2002.12213) [Repo](https://www.github.com/JWSoh/MZSR)
+Meta-Transfer Learning for Zero-Shot Super-Resolution (**CVPR, 2020**) [[Arxiv](https://arxiv.org/abs/2002.12213)] [[Repo](https://www.github.com/JWSoh/MZSR)]
 
 ## References
 Please cite our paper if this repo is helpful to your research.
@@ -136,5 +136,4 @@ Please cite our paper if this repo is helpful to your research.
   journal={arXiv preprint arXiv:2002.12213},
   year={2020}
 }
-
 ```
