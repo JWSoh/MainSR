@@ -10,14 +10,14 @@ This repo introduces some basic codes for training super-resolution networks bas
 ```
 ******* Codes to generate TFRecord dataset ********
 
-generate_TFRecord.py			-> Generic code for super-resolution.
+generate_TFRecord.py		-> Generic code for super-resolution.
 generate_TFRecord_MZSR.py	-> For MZSR.
 
 *******    Codes to load TFRecord dataset    ********
 
-config.py							-> For the configuration.
-Visualize_TFRecord.py			-> For the visualization (inspection of TFRecord file).
-dataLoader.py						-> A guideline how to load TFRecord dataset.
+config.py			-> For the configuration.
+Visualize_TFRecord.py		-> For the visualization (inspection of TFRecord file).
+dataLoader.py			-> A guideline how to load TFRecord dataset.
 ```
 
 ## Environments
