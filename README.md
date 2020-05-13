@@ -7,6 +7,19 @@ This repo introduces some basic codes for training super-resolution networks bas
 2. How to load the TFRecord dataset for training.
 3. Introduces some of our works.
 
+```
+******* Codes to generate TFRecord dataset ********
+
+generate_TFRecord.py			-> Generic code for super-resolution.
+generate_TFRecord_MZSR.py	-> For MZSR.
+
+*******    Codes to load TFRecord dataset    ********
+
+config.py							-> For the configuration.
+Visualize_TFRecord.py			-> For the visualization (inspection of TFRecord file).
+dataLoader.py						-> A guideline how to load TFRecord dataset.
+```
+
 ## Environments
 - Ubuntu 18.04
 - NVIDIA GPU & GPU Driver
@@ -43,7 +56,11 @@ python generate_TFRecord.py --scale [Scaling Factor] --labelpath [Path to HR ima
 ```
 **Example Code**
 ```
-python generate_TFRecord.py --scale 2 --labelpath DIV2K/DIV2K/DIV2K_train_HR --datapath DIV2K/DIV2K/DIV2K_train_LR_bicubic --tfrecord train_SR_X2.tfrecord
+python generate_TFRecord.py --scale 2 --labelpath DIV2K/DIV2K/DIV2K_train_HR --datapath DIV2K/DIV2K/DIV2K_train_LR_bicubic --tfrecord train_SR_X2
+```
+For MZSR,
+```
+python generate_TFRecord_MZSR.py --labelpath DIV2K/DIV2K/DIV2K_train_HR --tfrecord train_MZSR
 ```
 
 **Important Notes**
@@ -69,6 +86,7 @@ Navigate **dataLoader.py** file and modify it for other general usage of this co
         ├──── __init__(): Constructor.
                 ├────> "BUFFER_SIZE" for the size for shuffling.
                 └────> "augmentation" a flag for data augmentation.
+		├──── augment(): Apply data augmentation.
         ├──── _parse_function(): To parse the Tfrecord file.
         └──── load_tfrecord(): To load the tfrecord file to iterative .
 └─ Visualize_TFRecord.py: Run code for visualization.
@@ -86,8 +104,10 @@ python Visualize_TFRecord.py --gpu 0 --tfrecord train_SR_X2.tfrecord
 **Important Notes**
 
 This code is for Tensorflow version 1.x.
+
+Will be updated later for Tensorflow 2.x versions!
 - You don't need tf.Session() for Tensorflow 2.x versions.
-- Requires slight modification of dataLoader.load_tfrecord() for Tensorflow 2.x versions.
+- Requires slight modification for Tensorflow 2.x versions. 
 
 ## Introduction of Our Works
 
