@@ -13,7 +13,7 @@ This repo introduces some basic codes for training super-resolution networks bas
 generate_TFRecord.py		-> Generic code for super-resolution.
 generate_TFRecord_MZSR.py	-> For MZSR.
 
-*******    Codes to load TFRecord dataset    ********
+*******   Codes to load TFRecord dataset   ********
 
 config.py			-> For the configuration.
 Visualize_TFRecord.py		-> For the visualization (inspection of TFRecord file).
@@ -86,7 +86,7 @@ Navigate **dataLoader.py** file and modify it for other general usage of this co
         ├──── __init__(): Constructor.
                 ├────> "BUFFER_SIZE" for the size for shuffling.
                 └────> "augmentation" a flag for data augmentation.
-		├──── augment(): Apply data augmentation.
+        ├──── augment(): Apply data augmentation.
         ├──── _parse_function(): To parse the Tfrecord file.
         └──── load_tfrecord(): To load the tfrecord file to iterative .
 └─ Visualize_TFRecord.py: Run code for visualization.
